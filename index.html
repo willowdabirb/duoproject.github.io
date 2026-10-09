@@ -13,15 +13,84 @@
                 url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.ttf")format("truetype"),
                 url("https://db.onlinewebfonts.com/t/14936bb7a4b6575fd2eee80a3ab52cc2.svg#Feather Bold")format("svg");
             }
+            @font-face {
+                font-family: "DIN Next Rounded";
+                src: url("https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot");
+                src: url("https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.eot?#iefix")format("embedded-opentype"),
+                url("https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff2")format("woff2"),
+                url("https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.woff")format("woff"),
+                url("https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.ttf")format("truetype"),
+                url("https://db.onlinewebfonts.com/t/ab596f21664c5582567537d241e2a53e.svg#DIN Next Rounded LT W01 Regular")format("svg");
+            }
+            @font-face {
+                font-family: "DIN Next Rounded";
+                font-weight:bold;
+                src: url("https://db.onlinewebfonts.com/t/6f1a075af8afe852f3e3c8a75e49bc31.eot");
+                src: url("https://db.onlinewebfonts.com/t/6f1a075af8afe852f3e3c8a75e49bc31.eot?#iefix")format("embedded-opentype"),
+                url("https://db.onlinewebfonts.com/t/6f1a075af8afe852f3e3c8a75e49bc31.woff2")format("woff2"),
+                url("https://db.onlinewebfonts.com/t/6f1a075af8afe852f3e3c8a75e49bc31.woff")format("woff"),
+                url("https://db.onlinewebfonts.com/t/6f1a075af8afe852f3e3c8a75e49bc31.ttf")format("truetype"),
+                url("https://db.onlinewebfonts.com/t/6f1a075af8afe852f3e3c8a75e49bc31.svg#DIN Next Rounded LT Pro Bold")format("svg");
+            }
+
             body {
-                padding:20px;
+                font-family:'DIN Next Rounded';
+                margin:0;
+                min-height: 100vh; 
+                display:flex;
+                flex-direction:column;
             }
             h1 {
                 font-family:'Feather Bold';
                 text-align:center;
-                font-size:50pt;
+                font-size:60pt;
                 color:#ff8f0e;
+                margin:0;
             }
+            h3 {
+                font-family:'Feather Bold';
+                text-align:center;
+                font-size:30pt;
+                color:rgb(140, 140, 140);
+                margin-bottom:100px;
+            }
+            #mainBody {
+                margin-top:0;
+                padding:15px;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-bottom:100px;
+            }
+            #loginButton {
+                background-color:rgb(90, 228, 47);
+                border-radius:20px;
+                width:15%;
+                margin:auto;
+                text-align:center;
+                font-weight:bold;
+                color: white;
+                box-shadow: 3px 3px 0px 2px rgb(68, 185, 5);
+                letter-spacing: 1px;
+                font-size:15pt;
+            }
+            header {
+                padding:15px;
+            }
+            footer {
+                margin-top:auto;
+                background-color:rgb(89,203,6);
+                display:flex;
+                padding:20px;
+                color:white;
+                font-size:small;
+            }
+            #streak {
+                display:block;
+            }
+
             
         </style>
     </head>
@@ -29,9 +98,17 @@
         <header>
             <img src="duolingo-seeklogo.png" width="200">
         </header>
-        <h1>What's your streak?</h1>
-        <h3>Enter it here for a chance to earn a discount at the Duolingo Tour!*</h3>
-        <input type="text">
-        <footer><p>*DISCLAIMER: This is not a real Duolingo project. This page was created as a demonstration element for a presentation.</p></footer>
+        <div id="mainBody">
+            <img id="streak" src="flame.gif" width="20%">
+            <h1>What's your streak?</h1>
+            <h3>Enter it here for a chance to earn a discount at the Duolingo Tour!*</h3>
+            <div id="loginButton">
+                <p>LOG IN</p>
+            </div>
+        </div>
+        <br>
+        <footer>
+                <p>*DISCLAIMER: This is not a real Duolingo product. This page was created as a demonstration element for a project presentation and will likely be removed from Github within the week following October 19, 2026.</p>
+        </footer>
     </body>
 </html>
