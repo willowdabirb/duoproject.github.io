@@ -44,8 +44,12 @@
                 font-family:'Feather Bold';
                 text-align:center;
                 font-size:60pt;
-                color:#ff8f0e;
+                color:#80d815;
                 margin:0;
+            }
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50%      { transform: translateY(-10px); }
             }
             h3 {
                 font-family:'Feather Bold';
@@ -56,7 +60,7 @@
             }
             #mainBody {
                 margin-top:0;
-                padding:15px;
+                padding:30px;
                 display:flex;
                 justify-content: center;
                 align-items:center;
@@ -87,8 +91,12 @@
                 color:white;
                 font-size:small;
             }
-            #streak {
+            #mainImage {
                 display:block;
+                animation: float 3s ease-in-out infinite;
+            }
+            @media (prefers-reduced-motion: reduce) {
+                h1, #mainImage { animation: none; }
             }
 
             
@@ -99,11 +107,11 @@
             <img src="duolingo-seeklogo.png" width="200">
         </header>
         <div id="mainBody">
-            <img id="streak" src="flame.gif" width="20%">
-            <h1>What's your streak?</h1>
-            <h3>Enter it here for a chance to earn a discount at the Duolingo Tour!*</h3>
+            <img id="mainImage" src="koreanDuo.jpeg" width="20%">
+            <h1>Announcing...Duo's Puzzle Tour!*</h1>
+            <h3>Reserve a spot for a chance to solve the puzzle and earn a limited-edition Duo plushie!</h3>
             <div id="loginButton">
-                <p>LOG IN</p>
+                <p>RSVP NOW!</p>
             </div>
         </div>
         <br>
